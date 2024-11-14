@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Box</title>
+    <link rel="stylesheet" href="chocolate box.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav bd-container">
+            <a href="chocolate box.html" class="nav__logo"><h1>Chocolate Box</h1></a>
+    
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="chocolate box.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="products.html" class="nav__link">Products</a></li>
+                    <li class="nav__item"><a href="products.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="products.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="login-section">
+        <form id="loginForm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Email" required>
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <div class="checkbox">
+                <span>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Remember Me</label>
+                </span>
+                <h5 id="forgotPassword">Forget Password?</h5>
+            </div>
+            <input type="submit" class="submit-btn" value="Login">
+            <div class="login-register">
+                <p>Don't have an account? <a href="#" class="register-btn">Register</a></p>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chocolate Box. By using HTML,CSS And JS</p>
+    </footer>
+
+    <script src="chocolate box.js"></script>
+</body>
+</html>

@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+  .lato-regular {
+    font-family: "Lato", sans-serif; /* Use Lato font */
+    font-weight: 400; /* Set regular weight */
+    font-style: normal; /* Set normal style */
+}
+.teko-regular {
+    font-family: "Teko", sans-serif; /* Use Teko font */
+    font-optical-sizing: auto;  /* Set optical sizing */
+    font-weight: 300;  /* Set regular weight */
+    font-style: normal;  /* Set normal style */
+}
+
+body {
+    font-family: Arial, sans-serif;   /* Set default font */
+    background-color: #070410; /* Set background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.header {
+    background-color: #231651; /* Set header background color */
+    box-shadow: 0 10px 26px 0px #4DCCBD; /* Add box shadow */
+    padding: 10px 20px; /* Add padding */
+    display: flex; /* Display as flex container */
+    justify-content: space-between; /* Justify content to space between */
+    align-items: center; /* Align items to center */
+    border-bottom: 2px solid black; /* Add bottom border */
+}
+.header h1 {
+    margin: 0; /* Remove default margin */
+    color: rgb(255, 255, 255); /* Set text color */
+    font-family: teko-regular; /* Use Teko font */
+    
+}
+.nav {
+    display: flex; /* Display as flex container */
+    gap: 20px; /* Add space between links */
+}
+.nav a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(255, 255, 255); /* Set text color */
+    font-family: teko-regular; /* Use Teko font */
+    font-size: 1.5em; /* Set font size */
+}
+.search {
+    border: 2px solid black; /* Add border */
+    padding: 10px 9px; /* Add padding */
+    font-size: 2em; /* Set font size */
+    border-radius: 15px; /* Add border radius */
+}
+
+main {
+    max-width: 900px; /* Set max width */
+    margin: 0px auto; /* Center horizontally */
+    display: grid; /* Display as grid */
+    justify-content: center; /* Justify content to center */
+    grid-auto-columns: minmax(100px, 1fr); /* Set grid columns */
+    grid-template-areas: 
+    "movie-1 movie-1"
+    "movie-2 movie-3"
+    "movie-4 movie-4"
+    "movie-5 movie-5"
+    "movie-6 movie-6";
+    gap: 40px;
+}
+
+/* Container 1 This is the section for Container One */
+
+.movie-container-1 {
+    display: flex;  /* Display as flex container */
+    flex-direction: row-reverse; /* Reverse direction */
+    justify-content: center; /* Justify content to center */
+    grid-area: movie-1; /* Set grid area */
+    width: 100%; /* Set width */
+    padding-top: 20px; /* Add padding */
+    box-shadow: 0 16px 16px 0px #4DCCBD; /* Add box shadow */
+}
+.main-content {
+    padding-top: 20px; /* Add padding */
+    width: 100%; /* Set width */
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Set flex direction */
+    align-items: center; /* Align items to center */
+}
+.movie {
+    background-color: #FFFFFF; /* Set background color */
+    padding-bottom: 20px; /* Add padding */
+    border: 2px solid black; /* Add border */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Set flex direction */
+    align-items: center; /* Align items to center */
+    width: 100%; /* Set width */
+}
+.poster-container {
+    width: 100%; /* Set width */
+    height: 300px; /* Set height */
+    overflow: hidden; /* Prevent overflow */
+}
+.poster-container img {
+    width: 100%; /* Scale image to fit container */
+    height: 100%; /* Scale image to fit container */
+    object-fit: cover; /* Cover the container */
+}
+.movie .description {
+    width: 90%; /* Set width */
+    display: flex; /* Display as flex container */
+    justify-content: space-between; /* Justify content */
+    align-items: center; /* Align items to center */
+    margin-top: 20px; /* Add margin */
+    margin-bottom: 5px; /* Add margin */
+    padding: 16px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+.movie .description p {
+    margin: 0; /* Remove margin */
+    flex: 1;    /* Set flex to 1 to take up available space */
+    padding-right: 10px; /* Add padding */
+    font-size: 1.5em; /* Set font size */
+}
+.movie .description .watch-now {
+    height: 100%; /* Set height */
+}
+.movie .description .watch-now button {
+    border: 2px solid black; /* Add border */
+    background-color: #4DCCBD; /* Set background color */
+    box-sizing: border-box; /* Include padding in width */
+    padding: 10px 50px; /* Add padding */
+    text-align: center; /* Align text to center */
+    font-size: 2em; /* Set font size */
+    border-radius: 10px; /* Add border radius */
+    width: 250px; /* Set width */
+    height: 100%; /* Set height */
+    font-family: teko-regular; /* Use Teko font */
+}
+
+
+/* Container 2 This is the section for Container One */
+
+
+.movie-container-2 {
+    display: flex; /* Display as flex container */
+    border: 1px solid #000; /* Add border */
+    gap: 20px; /* Add gap between cards */
+    flex-wrap: wrap; /* Allow wrapping to the next line if there are too many cards */
+    justify-content: space-between;  /* Justify content */
+    grid-area: movie-2; /* Set grid area */
+    box-shadow: 0 16px 16px 0px #4DCCBD; /* Add box shadow */
+} 
+.movie-card {
+    background-color: white; /* Set background color */
+    width: 100%; /* Set width */
+    padding: 0px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+.movie-poster {
+    width: 100%; /* Set width */
+    background-color: #f0f0f0; /* Set background color */
+    display: flex; /* Display as flex container */
+    justify-content: center; /* Justify content */
+}
+.movie-poster img {
+    max-width: 100%; /* Set max width */
+    max-height: 100%; /* Set max height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+.movie-description-2 {
+    padding: 10px; /* Add padding */
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Set flex direction */
+    justify-content: space-between; /* Justify content */
+    padding: 17px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 1.5em; /* Set font size */
+}
+.movie-button-2{
+    margin-top: 50px;  /* Add margin */
+    margin-left: 16px; /* Add margin */
+    margin-right: 16px; /* Add margin */
+}
+
+/* Container 3 This is the section for Container One */
+
+.movie-container-3 {
+    background-color: white; /* Set background color */
+    border: 1px solid #000; /* Add border */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Set flex direction */
+    width: 100%; /* Set width */
+    grid-area: movie-3; /* Set grid area */
+    box-shadow: 0 16px 16px 0px #4DCCBD; /* Add box shadow */
+}
+.poster-section-3 {
+    width: 100%; /* Takes up half the box */
+    display: flex; /* Display as flex container */
+    align-items: center; /* Align items */
+    justify-content: center; /* Justify content */
+}
+.poster-section-3 img {
+    width: 100%; /* Set width */
+    display: flex; /* Display as flex container */
+    align-items: flex-start; /* Align items */
+}
+.info-section-3 {
+    width: 100%; /* Takes up half the box */
+    padding: 20px; /* Add padding */
+    display: flex; /* Display as flex container */
+    padding: 16px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width */
+    flex-direction: column; /* Set flex direction */
+}
+.movie-description-3 {
+    height: 120px; /* Adjust height to match wireframe */
+    margin: 0 0 20px; /* Add margin */
+    padding: 10px; /* Add padding */
+    font-size: 1.5em; /* Adjust font size */
+}
+
+/* Container 4 This is the section for Container One */
+
+.movie-container-4 {
+    background-color: white; /* Set background color */
+    border: 1px solid #000; /* Add border */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    display: flex; /* Display as flex container */
+    flex-direction: row; /* Set flex direction */
+    width: 100%; /* Set width */
+    margin: 20px auto; /* Add margin */
+   grid-area: movie-4; /* Set grid area */
+   box-shadow: 0 16px 16px 0px #4DCCBD; /* Add box shadow */
+}
+.poster-section-4 {
+    width: 50%; /* Takes up half the box */
+    display: flex; /* Display as flex container */
+    align-items: center; /* Align items */
+    justify-content: center; /* Justify content */
+}
+.poster-section-4 img {
+    width: 100%; /* Scale image to fit container */
+    height: auto; /* Maintain aspect ratio */
+}
+.info-section-4 {
+    width: 50%; /* Takes up half the box */
+    padding: 20px; /* Add padding */
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Set flex direction */
+    justify-content: space-between; /* Justify content */
+    padding: 16px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+.movie-description-4 {
+    height: 120px; /* Adjust height to match wireframe */
+    margin: 0 0 20px; /* Add margin */
+    padding: 10px; /* Add padding */
+    font-size: 1.5em; /* Adjust font size */
+}
+
+/* Container 5  This is the section for Container One */
+
+.movie-container-5 {
+    background-color: white; /* Set background color */
+    border: 1px solid #000; /* Add border */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    display: flex; /* Display as flex container */
+    flex-direction: row; /* Set flex direction */
+    width: 100%; /* Set width */
+    margin: 20px auto; /* Add margin */
+    grid-area: movie-5; /* Set grid area */
+    box-shadow: 0 16px 16px 0px #4DCCBD; /* Add box shadow */
+}
+.poster-section-5 {
+    width: 50%; /* Takes up half the box */
+    display: flex; /* Display as flex container */
+    align-items: center; /* Align items */
+    justify-content: center; /* Justify content */
+}
+.poster-section-5 img {
+    width: 100%; /* Scale image to fit container */
+    height: auto; /* Maintain aspect ratio */
+}
+.info-section-5 {
+    width: 50%; /* Takes up half the box */
+    padding: 20px; /* Add padding */
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Set flex direction */
+    justify-content: space-between; /* Justify content */
+}
+.movie-description-5 {
+    height: 120px; /* Adjust height to match wireframe */
+    margin: 0 0 20px; /* Add margin */
+    padding: 10px; /* Add padding */
+    padding: 16px; /* Add padding */
+    box-sizing: border-box; /* Include padding in box model */
+    font-size: 1.5em; /* Adjust font size */
+}
+
+/* Container 6 This is the section for Container One */
+
+.movie-container-6 {
+    background-color: white; /* Set background color */
+    border: 1px solid #000; /* Add border */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    display: flex; /* Display as flex container */
+    flex-direction: row; /* Set flex direction */
+    width: 100%; /* Set width */
+    margin: 20px auto; /* Add margin */
+    grid-area: movie-6;     /* Set grid area */
+    box-shadow: 0 16px 16px 0px #4DCCBD; /* Add box shadow */
+}
+.poster-section-6 {
+    width: 50%; /* Takes up half the box */
+    display: flex; /* Display as flex container */
+    align-items: center; /* Align items */
+    justify-content: center; /* Justify content */
+}
+.poster-section-6 img {
+    width: 100%; /* Scale image to fit container */
+    height: auto; /* Maintain aspect ratio */
+}
+.info-section-6 {
+    width: 50%; /* Takes up half the box */
+    padding: 20px; /* Add padding */
+    display: flex; /* Display as flex container */
+    flex-direction: column; /* Set flex direction */
+    justify-content: space-between; /* Justify content */
+}
+.movie-description-6 {
+    height: 120px; /* Adjust height to match wireframe */
+    margin: 0 0 20px; /* Add margin */
+    padding: 10px; /* Add padding */
+    padding: 16px; /* Add padding */
+    box-sizing: border-box; /* Include padding in box model */
+    font-size: 1.5em; /* Adjust font size */
+}
+.common-button {
+    background-color: #4DCCBD; /* Set background color */
+    text-align: center; /* Align text to center */
+    padding: 10px 0; /* Add padding */
+    border: 1px solid #000; /* Add border */
+    cursor: pointer; /* Set cursor to pointer */
+    border-radius: 5px; /* Add border radius */
+    font-size: 2em; /* Set font size */
+    width: 100%; /* Set width */
+    font-family: teko-regular; /* Set font family */
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+    /* Tablet-Specific Styles */
+
+    main {
+        display: grid; /* Display as grid */
+        grid-template-columns: repeat(2, 1fr);  /* Set grid columns */
+        grid-template-areas: 
+            "movie-1 movie-2"
+            "movie-3 movie-4"
+            "movie-5 movie-6";
+            grid-template-columns: minmax(100px, 1fr);
+            margin: 32px; /* Add margin */
+    }
+    .header {
+        padding: 20px; /* Add padding */
+        width: 96%; /* Set width */
+        flex-direction: row; /* Set flex direction */
+    }
+    .header h1 {
+        font-size: 2em; /* Set font size */
+    }
+    .nav {
+        gap: 30px; /* Add gap */
+    }
+
+    .nav a {
+        text-decoration: none; /* Remove text decoration */
+        color: rgb(255, 255, 255); /* Set text color */
+        display: flex; /* Display as flex */
+        font-size: 1.5em; /* Set font size */
+    }
+    .search {
+        padding: 10px 15px; /* Add padding */
+        font-size: 1.5em; /* Set font size */
+        border-radius: 15px; /* Add border radius */
+    }
+
+/* Main section adjustments */
+
+.movie-container-1 {
+    display: flex;  /* Display as flex container */
+    flex-direction: row-reverse; /* Reverse direction */
+    justify-content: center; /* Center horizontally */
+    grid-area: movie-1; /* Set grid area */
+    width: 100%; /* Set width */
+    padding-top: 20px; /* Add padding */
+    box-shadow: 0 16px 16px 0px #4DCCBD; /* Add box shadow */
+    height: 95.3%; /* Set height */
+}
+
+.movie .description {
+    width: 100%; /* Set width */
+        display: flex; /* Display as flex container */
+        justify-content: space-between; /* Justify content */
+        flex-direction: column; /* Set flex direction */
+        margin-top: 20px; /* Add margin */
+        margin-bottom: 0px; /* Remove margin */
+        padding: 16px 16px 0px 16px; /* Add padding */
+        box-sizing: border-box; /* Set box sizing */
+
+}
+.movie .description p {
+    margin: 0; /* Remove margin */
+    flex: 1; /* Set flex */
+    padding-right: 10px; /* Add padding */
+    padding-bottom: 5px; /* Add padding */
+    font-size: 1.5em; /* Set font size */
+    margin-bottom: 30px; /* Add margin */
+}
+.movie .description .watch-now button {
+    border: 2px solid black; /* Add border */
+        padding: 20px 80px; /* Add padding */
+        background-color: #d3d3d3; /* Set background color */
+        text-align: center; /* Center text */
+        font-size: 2em; /* Set font size */
+        border-radius: 15px; /* Add border radius */
+        cursor: pointer; /* Change cursor */
+        width: 100%; /* Set width */
+}
+
+.poster-container {
+    width: 100%; /* Set width */
+    height: auto; /* Set height */
+    overflow: hidden;  /* Hide overflow */
+}
+.movie-button-2 {
+    margin-top: 50px; /* Add margin */
+    margin-left: 16px; /* Add margin */
+    margin-right: 16px; /* Add margin */
+    margin-bottom: 16px; /* Add margin */
+}
+.movie-button-3 {
+    padding-top: 28px; /* Add padding */
+}
+
+     .movie-container-2, .movie-container-3 {
+        background-color: white; /* Set background color */
+        border: 1px solid #000; /* Add border */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+        display: flex; /* Display as flex container */
+        flex-direction: column; /* Set flex direction */
+        width: 100%; /* Set width */
+        margin: 20px auto; /* Add margin */
+        box-shadow: 0 16px 16px 0px #4DCCBD; /* Add box shadow */
+
+    }
+     .poster-section-2, .poster-section-3 {
+        width: 100%; /* Full width for tablet layout */
+        display: flex; /* Display as flex container */
+        align-items: center; /* Align items */
+        justify-content: center; /* Justify content */
+    }
+    .movie-description-2 , .movie-description-3 {
+        padding: 10px; /* Add padding */
+        display: flex; /* Display as flex container */
+        flex-direction: column; /* Set flex direction */
+        justify-content: space-between; /* Justify content */
+        font-size: 1.5em; /* Set font size */
+        box-sizing: border-box; /* Include padding and border in width */
+    }
+    
+     .info-section-3 {
+        width: 100%; /* Full width for tablet layout */
+        padding: 20px; /* Add padding */
+        display: flex;  /* Display as flex container */
+        flex-direction: column; /* Set flex direction */
+        justify-content: space-between;  /* Justify content */
+        box-sizing: border-box; /* Include padding and border in width */
+        gap: 76px; /* Add gap between elements */
+    }
+   
+
+    /* Adjust movie container width */
+    .movie-container-4, .movie-container-5, .movie-container-6 {
+        background-color: white; /* Set background color */
+        border: 1px solid #000; /* Add border */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+        display: flex; /* Display as flex container */
+        flex-direction: column; /* Set flex direction */
+        width: 100%; /* Set width */
+        margin: 20px auto; /* Add margin */
+        box-shadow: 0 16px 16px 0px #4DCCBD; /* Add box shadow */
+
+    }
+
+    /* Adjust poster width */
+    .poster-section-4, .poster-section-5, .poster-section-6 {
+        width: 100%; /* Full width for tablet layout */
+        display: flex; /* Display as flex container */
+        align-items: center; /* Align items */
+        justify-content: center; /* Justify content */
+    }
+
+    /* Adjust info section */
+    .info-section-4, .info-section-5, .info-section-6 {
+        width: 100%; /* Full width for tablet layout */
+        padding: 20px; /* Add padding */
+        display: flex; /* Display as flex container */
+        flex-direction: column; /* Set flex direction */
+        justify-content: space-between; /* Justify content */
+        box-sizing: border-box; /* Include padding and border in width */
+        height: 100%; /* Set height */
+    }
+
+    .movie-description-4, .movie-description-5, .movie-description-6 {
+        height: 100%; /* Set height */
+        margin: 0 0 20px; /* Add margin */
+        padding: 10px; /* Add padding */
+        font-size: 1.5em; /* Set font size */
+    }
+
+    .common-button {
+        border: 2px solid black; /* Add border */
+        padding: 20px 80px; /* Add padding */
+        background-color: #d3d3d3; /* Set background color */
+        text-align: center; /* Center text */
+        font-size: 2em; /* Set font size */
+        border-radius: 15px; /* Add border radius */
+        cursor: pointer; /* Change cursor */
+        width: 100%; /* Set width */
+    }
+
+    /* Adjust movie section width */
+    .movie {
+        width: 100%; /* Full width for tablet layout */
+    }
+
+    /* Adjust container width for the .main-content div */
+    .main-content {
+        width: 100%; /* Full width for tablet layout */
+    }
+
+    
+}
+
+/* Mobile styles (360px - 720px) */
+@media (max-width: 719px) {
+    /* Header section */
+    body {
+        font-family: Arial, sans-serif; /* Set font family */
+        background-color: #070410; /* Set background color */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        overflow-x: hidden;    /* Prevent horizontal scrolling */
+        max-width: fit-content; /* Set max width */
+    }
+    main {
+        display: grid; /* Display as grid */
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+            "movie-1"
+            "movie-2"
+            "movie-3"
+            "movie-4"
+            "movie-5"
+            "movie-6";
+            max-width: fit-content;
+    }
+    .header {
+        display: flex; /* Display as flex container */
+        justify-content: space-between; /* Justify content */
+        align-items: center;    /* Align items */
+        padding: 16px; /* Small spacing */
+        font-size: 18px; /* Small font size */
+        background-color: #231651; /* Set background color */
+        border-bottom: 1px solid #ddd; /* Add bottom border */
+    }
+    .header .title {
+        font-weight: bold; /* Bold font weight */
+    }
+    .nav a {
+        text-decoration: none; /* Remove text decoration */
+        color: rgb(255, 255, 255); /* Set text color */
+        font-weight: bold; /* Bold font weight */
+        display: none ; /* Hide navigation links */
+    }
+    .search {
+        border: 2px solid black; /* Add border */
+        padding: 13px 30px; /* Add padding */
+        font-size: 16px; /* Set font size */
+        border-radius: 10px; /* Add border radius */
+        border-radius: 16px; /* Add border radius */
+    }
+    .movie-container {
+        display: flex; /* Display as flex container */
+        flex-direction: column; /* Set flex direction */
+        gap: 16px; /* Small spacing */
+    
+    }
+
+    /* Individual movie card */
+    .movie {
+        display: flex; /* Display as flex container */
+        flex-direction: column; /* Set flex direction */
+        width: 100%; /* Full width for mobile */
+        background-color: #fff;  /* Set background color */
+        border: 1px solid #ddd; /* Add border */
+        border-radius: 1px; /* Add border radius */
+        overflow: hidden; /* Hide overflow */
+    }
+    .movie-description {
+        padding: 10px; /* Add padding */
+        display: flex; /* Display as flex container */
+        flex-direction: column; /* Set flex direction */
+        justify-content: space-between; /* Justify content */
+        height: 450px; /* Set height */
+        padding: 16px; /* Add padding */
+        box-sizing: border-box; /* Include padding in box model */
+        font-size: 1.5em; /* Set font size */
+    }
+    .movie .description {
+        width: 100%; /* Full width */
+        display: flex; /* Display as flex container */
+        margin-top: 5px; /* Add margin */
+        margin-bottom: -20px; /* Add margin */
+        flex-direction: column; /* Set flex direction */
+        gap: 30px; /* Large spacing */
+        align-items: stretch; /* Stretch items */
+    }
+    
+    .movie .description .watch-now button {
+        border: 2px solid black; /* Add border */
+        padding: 20px 0px; /* Add padding */
+        background-color: #d3d3d3;  /* Set background color */
+        text-align: center; /* Center text */
+        font-size: 2em; /* Set font size */
+        border-radius: 10px; /* Add border radius */
+        width: 100%; /* Full width */
+    }
+     .movie-button button  {
+        border: 2px solid black; /* Add border */
+        padding: 20px 0px; /* Add padding */
+        background-color: #d3d3d3; /* Set background color */
+        text-align: center; /* Center text */
+        border-radius: 10px; /* Add border radius */
+        font-size: 2em; /* Set font size */
+        width: 100%; /* Full width */
+    }
+    .movie-button-2 {
+        margin-top: 50px; /* Add margin */
+        margin-left: 16px; /* Add margin */
+        margin-right: 16px; /* Add margin */
+        padding-bottom: 15px; /* Add padding */
+    }
+
+    .movie-container-4 , .movie-container-5 , .movie-container-6 {
+        background-color: white; /* Set background color */
+        border: 1px solid #000; /* Add border */
+        box-shadow: 0 16px 16px 0px #4DCCBD; /* Add box shadow */
+        display: flex; /* Display as flex container */
+        flex-direction: column; /* Set flex direction */
+        width: 100%; /* Full width */
+        margin: 20px auto; /* Add margin */
+    }
+    .movie-description-4 , .movie-description-5 , .movie-description-6 {
+        height: 100%; /* Full height */
+        margin: 0 0 20px; /* Add margin */
+        padding: 10px; /* Add padding */
+        font-size: 1.5em; /* Set font size */
+    }
+    
+    .poster-section-4 , .poster-section-5 , .poster-section-6 {
+        width: 100%; /* Full width */
+        display: flex; /* Display as flex container */
+        align-items: center; /* Align items */
+        justify-content: center; /* Justify content */
+    }
+    .info-section-4 , .info-section-5 , .info-section-6 {
+        width: 100%; /* Full width */
+        padding: 20px; /* Add padding */
+        display: flex; /* Display as flex container */
+        flex-direction: column; /* Set flex direction */
+        justify-content: space-between; /* Justify content */
+        box-sizing: border-box; /* Include padding and border in width */
+    }        
+    .action-button-4 button , .action-button-5 button , .action-button-6 button {
+        border: 2px solid black; /* Add border */
+        padding: 20px 0px; /* Add padding */
+        background-color: #d3d3d3; /* Set background color */
+        text-align: center; /* Center text */
+        font-size: 2em; /* Set font size */
+        border-radius: 10px; /* Add border radius */
+        width: 100%; /* Full width */
+    }
+.common-button {
+    border: 2px solid black; /* Add border */
+        padding: 20px 0px; /* Add padding */
+        background-color: #d3d3d3; /* Set background color */
+        text-align: center; /* Center text */
+        border-radius: 10px; /* Add border radius */
+        font-size: 2em; /* Set font size */
+        width: 100%; /* Full width */
+    }
+}

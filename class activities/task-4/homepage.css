@@ -1,0 +1,80 @@
+
+.Home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 85px;
+    position: relative;
+    z-index: 1; 
+    box-sizing: border-box; 
+}
+
+.Home * {
+    position: relative;
+    z-index: 2;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%; /* Add this line */
+    box-sizing: border-box; /* Add this line */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    z-index: 999;
+    padding: 30px 80px;
+}
+header nav a{
+    color: white;
+    font-size: 24px;
+    margin-left: 50px;
+    transition: .3s;
+
+}
+header nav .active,
+header nav a:hover{
+    color: #00b4ff;
+}
+.text-box{
+    color: white;
+    width: 50%;
+
+}
+body {
+    background-image: url('dark-mood-picture.jpg');
+    background-size: cover; /* Ensures the image covers the screen */
+    background-position: center -400px; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the image fixed in place */
+    background-color: #8f1010; /* Fallback color if the image doesn't load */
+    color: #fff; /* Text color */
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to your liking */
+  }
+  footer {
+    position: absolute; /* or fixed, depending on your layout */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000; /* or any other color you prefer */
+    padding: 5px;
+    opacity: 0.5;
+  }
